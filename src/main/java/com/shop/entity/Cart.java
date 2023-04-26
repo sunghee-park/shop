@@ -7,22 +7,23 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.lang.reflect.Member;
 
+
 @Entity
-@Table(name="cart")
+@Table(name = "cart")
 @Getter
 @Setter
 @ToString
 public class Cart {
 
     @Id
-    @Column(name="cart_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cart_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-/*
-    @OneToOne
+  /*  @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="member_id")
     private Member member;
 */
+    }
 
-}
+
