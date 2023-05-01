@@ -1,3 +1,4 @@
+/*
 package com.shop.entity;
 
 import com.shop.dto.MemberFormDto;
@@ -43,7 +44,6 @@ class CartTest {
         return Member.createMember(memberFormDto, passwordEncoder);
     }
 
-/*
     @Test
     @DisplayName("장바구니 회원 엔티티 매핑 조회 테스트")
     public void findCartAndMemberTest(){
@@ -61,6 +61,8 @@ class CartTest {
                 .orElseThrow(EntityNotFoundException::new);
         assertEquals(savedCart.getMember().getId(), member.getId());
     }
-*/
+
+
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.shop.service;
 
 import com.shop.entity.Member;
@@ -44,4 +45,4 @@ public class MemberService implements UserDetailsService{
                 .build();
     }
 
-}
+}*/

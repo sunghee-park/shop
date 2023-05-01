@@ -1,3 +1,4 @@
+/*
 package com.shop.config;
 
 import com.shop.service.MemberService;
@@ -60,4 +61,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                   .passwordEncoder(passwordEncoder());
     }
 
-}
+}*/

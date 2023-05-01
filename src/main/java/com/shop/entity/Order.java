@@ -1,3 +1,4 @@
+/*
 package com.shop.entity;
 
 import com.shop.constant.OrderStatus;
@@ -39,4 +40,4 @@ public class Order {
 
 
 
-}
+}*/

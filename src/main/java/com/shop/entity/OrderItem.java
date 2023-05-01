@@ -1,3 +1,4 @@
+/*
 package com.shop.entity;
 
 
@@ -33,3 +34,4 @@ public class OrderItem{
     private LocalDateTime updateTime;
 
 }
+*/
