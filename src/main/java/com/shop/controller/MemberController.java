@@ -1,10 +1,8 @@
-/*
 package com.shop.controller;
 
 import com.shop.dto.MemberFormDto;
 import com.shop.entity.Member;
 import com.shop.service.MemberService;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -15,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
+
+
 @RequestMapping("/members")
 @Controller
 @RequiredArgsConstructor
@@ -29,6 +29,14 @@ public class MemberController {
         return "member/memberForm";
     }
 
+/*    @PostMapping(value = "/new")
+    public String memberForm(MemberFormDto memberFormDto) {
+
+        Member member = Member.createMember(memberFormDto, passwordEncoder);
+        memberService.saveMember(member);
+
+        return "redirect:/";
+    }*/
     @PostMapping(value = "/new")
     public String newMember(@Valid MemberFormDto memberFormDto, BindingResult bindingResult, Model model) {
 
@@ -46,8 +54,7 @@ public class MemberController {
 
         return "redirect:/";
     }
-
-    @GetMapping(value = "/login")
+  /*  @GetMapping(value = "/login")
     public String loginMember() {
         return "/member/memberLoginForm";
     }
@@ -56,5 +63,5 @@ public class MemberController {
     public String loginError(Model model) {
         model.addAttribute("loginErrorMsg", "아이디 또는 비밀번호를 확인해주세요");
         return "/member/memberLoginForm";
-    }
-}*/
+    }*/
+}

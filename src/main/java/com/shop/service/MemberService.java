@@ -1,4 +1,3 @@
-/*
 package com.shop.service;
 
 import com.shop.entity.Member;
@@ -15,7 +14,7 @@ import javax.transaction.Transactional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class MemberService implements UserDetailsService{
+public class MemberService implements UserDetailsService {
 
     private final MemberRepository memberRepository;
 
@@ -44,5 +43,4 @@ public class MemberService implements UserDetailsService{
                 .roles(member.getRole().toString())
                 .build();
     }
-
-}*/
+}

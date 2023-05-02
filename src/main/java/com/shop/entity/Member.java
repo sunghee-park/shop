@@ -1,4 +1,3 @@
-/*
 package com.shop.entity;
 
 import com.shop.constant.Role;
@@ -47,4 +46,3 @@ public class Member {
 
 }
 
-*/

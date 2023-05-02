@@ -1,4 +1,3 @@
-/*
 package com.shop.service;
 
 import com.shop.dto.MemberFormDto;
@@ -56,4 +55,4 @@ class MemberServiceTest {
             memberService.saveMember(member2);});
         assertEquals("이미 가입된 회원입니다.", e.getMessage());
     }
-}*/
+}
