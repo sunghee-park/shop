@@ -1,4 +1,3 @@
-/*
 package com.shop.config;
 
 import org.springframework.security.core.AuthenticationException;
@@ -22,4 +21,3 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
         }
     }
 }
-*/
