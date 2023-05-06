@@ -1,4 +1,3 @@
-/*
 package com.shop.entity;
 
 import lombok.Getter;
@@ -7,6 +6,8 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.lang.reflect.Member;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -21,13 +22,14 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-  */
-/*  @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="member_id")
+  @OneToOne(fetch = FetchType.LAZY, targetEntity = com.shop.entity.Member.class)
+  @JoinColumn(name="member_id")
     private Member member;
-*//*
+
+    @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY)
+    private List<CartItem> cartItemList = new ArrayList<>();
+
 
     }
 
 
-*/

@@ -1,4 +1,3 @@
-/*
 package com.shop.entity;
 
 
@@ -18,11 +17,11 @@ public class CartItem {
     @Column(name = "cart_item_id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)/*(targetEntity = Cart.class)*/
     @JoinColumn(name="cart_id")
     private Cart cart;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Item.class)
     @JoinColumn(name = "item_id")
     private Item item;
 
@@ -30,4 +29,3 @@ public class CartItem {
 
 
 }
-*/

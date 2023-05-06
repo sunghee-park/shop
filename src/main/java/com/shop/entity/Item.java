@@ -7,6 +7,8 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="item")
@@ -38,5 +40,7 @@ public class Item {
 
     private LocalDateTime regTime;
     private LocalDateTime updateTime;
+
+
 
 }

@@ -1,4 +1,3 @@
-/*
 package com.shop.entity;
 
 import com.shop.constant.ItemSellStatus;
@@ -72,7 +71,7 @@ class OrderTest {
         assertEquals(3, savedOrder.getOrderItems().size());
     }
 
+
 }
 
 
-*/
