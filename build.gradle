@@ -44,6 +44,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-devtools'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'         // Thymeleaf Template
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'               // Thymeleaf Layout
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.9'
 }
 
 tasks.named('test') {
